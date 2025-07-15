@@ -1,0 +1,18 @@
+.container{
+    justify-content: center;
+}
+#submit_button{
+    background-color: rgb(207, 113, 36);
+}
+#submit_button:hover{
+    background-color: lightgreen;
+}
+#navbar{
+    background-color: antiquewhite;
+}
+body{
+    background-color: wheat;
+}
+label{
+    color:rgb(87, 52, 0)
+}
