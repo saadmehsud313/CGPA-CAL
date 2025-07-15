@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md" id="navbar" >
-        <a href="#" class="navbar-brand"> CGPA </a>
+        <a href="#" class="navbar-brand ms-2"> CGPA </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MyNav" aria-expanded="false" aria-controls="MyNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,9 +38,12 @@
     </nav>
     <div class="container mt-5">
     <form method="get">
-        <div class="row mb-3 g-3">
-            <div class="col-2"><label class="form-label" for="name">Student Name</label></div>
+        <div class="row mb-3 g-3 overflow-auto">
+            <div class="col-2 overflow-auto"><label class="form-label" for="name">Student Name</label></div>
             <div class="col-3"><input type="text" class="form-control" id="name" placeholder="Student Name"></div>
+          
+            <span class="col-2"><label class="form-label" for="sname">Subject Name</label></span>
+            <span class="col-3"><input type="text" id="sname" class="form-control" placeholder="Subject Name"></span>
         </div>
 
         <div class="row mb-3 g-3">
@@ -73,10 +76,7 @@
             <div class="col-12"><label class="form-text">Assignment Marks Here &downarrow;</label></div>
         </div>
 
-        <div class="row mb-3 g-3">
-            <span class="col-2"><label class="form-label" for="sname">Subject Name</label></span>
-            <span class="col-3"><input type="text" id="sname" class="form-control" placeholder="Subject Name"></span>
-        </div>
+      
 
         <div class="row mb-3 g-3">
             <span class="col-1"><label for="assignment1">A1</label></span>
@@ -119,14 +119,44 @@
 
         <div class="row">
             <div class="col col-md-5 offset-7 mt-3">
-                <button class="btn btn-primary" id="submit_button">Submit</button>
+                <button class="btn btn-primary" id="submit_button" type="button">Submit</button>
             </div>
         </div>
     </form>
 </div>
-  
-    <script src="bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <div class="container "> 
+          <span class="text-wrap">Result Will Be Displayed Here &downarrow;</span>
+            <div class="row mb-3">
+                <div class="col-md-2">
+                    Quiz Marks
+                </div>
+                <div class="col-md-1">
+                    <span id="quiz_marks"> </span>
+            </div>
+            
+            <div class="col-md-2">
+                    Assignment Marks
+            </div>
+            <div class="col-md-1">
+                    <span id="assignment_marks"> </span>
+            </div>
+
+             <div class="col-md-2">
+                   Mid Marks
+            </div>
+            <div class="col-md-1">
+                    <span id="mid_marks"> </span>
+            </div>
+             <div class="col-md-2">
+                    Final Marks
+            </div>
+            <div class="col-md-1">
+                    <span id="final_marks"> </span>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="bootstrap.bundle.min.js"></script>
+    
 </body>
 
 </html>
